@@ -1,9 +1,11 @@
 from node:alpine
 
-ADD . /usr/app
-
 WORKDIR /usr/app
 
+ADD ./package.json ./
+
 RUN npm install
+
+COPY ./ ./
 
 CMD ["npm" , "start"]
