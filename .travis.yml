@@ -5,6 +5,6 @@ language: generic
 services:
    - docker
 before_install:
-   - docker build -t dev-test -f ./frontend/dockerfile.dev ./frontend/ 
+   -  docker build -t dev-test -f  ./frontend/Dockerfile.dev ./frontend/ 
 script:
    - docker run -e CI=true dev-test npm run test
