@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Back to Good Work!
+          We are testing the Github workflow!
         </p>
         <a
           className="App-link"
